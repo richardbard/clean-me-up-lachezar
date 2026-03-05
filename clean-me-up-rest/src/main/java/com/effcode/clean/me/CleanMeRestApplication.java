@@ -11,11 +11,6 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class CleanMeRestApplication {
 
-  @Bean
-  public SmtpHandler smtpHandler() {
-    return new SmtpHandler();
-  }
-
   public static void main(String[] args) {
     SpringApplication.run(CleanMeRestApplication.class, args);
   }
